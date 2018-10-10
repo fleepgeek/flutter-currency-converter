@@ -5,7 +5,7 @@ A cool currency converter created with Flutter.
 Link to the YouTube tutorial
 [Currency Converter Tutorial](https://www.youtube.com/watch?v=sisZllMjoX0).
 
-![App Image](screenshot/main.png)
+![App Image](screenshots/main.png)
 
 ## What you'll learn
 
