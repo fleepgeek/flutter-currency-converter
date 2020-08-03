@@ -27,7 +27,7 @@ class _CurrencyConverterState extends State<CurrencyConverter> {
   }
 
   Future<String> _loadCurrencies() async {
-    String uri = "http://api.openrates.io/latest";
+    String uri = "https://api.exchangeratesapi.io/latest";
     var response = await http
         .get(Uri.encodeFull(uri), headers: {"Accept": "application/json"});
     var responseBody = json.decode(response.body);
@@ -39,7 +39,7 @@ class _CurrencyConverterState extends State<CurrencyConverter> {
   }
 
   Future<String> _doConversion() async {
-    String uri = "http://api.openrates.io/latest?base=$fromCurrency&symbols=$toCurrency";
+    String uri = "https://api.exchangeratesapi.io/latest?base=$fromCurrency&symbols=$toCurrency";
     var response = await http
         .get(Uri.encodeFull(uri), headers: {"Accept": "application/json"});
     var responseBody = json.decode(response.body);
